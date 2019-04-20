@@ -1,0 +1,112 @@
+@font-face {
+  font-family: "oswald";
+  src: url("../fonts/Oswald-Light.ttf");
+}
+
+* {
+  font-family: "oswald" !important;
+  box-sizing: border-box;
+}
+
+body {
+  background: url("../images/coffeeshop.jpg") no-repeat center center fixed;
+  -webkit-background-size: cover;
+  -moz-background-size: cover;
+  -o-background-size: cover;
+  background-size: cover;
+}
+
+nav {
+  background-color: white;
+  border-bottom: 2px solid black;
+  font-size: 2em;
+}
+
+.navbar-brand {
+  margin-left: 1.75em;
+  font-size: 1.2em;
+}
+
+.nav.item {
+  margin-right: 1.75em;
+}
+
+.writeUpBox {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid black;
+  border-radius: 0.5em;
+  padding: 0.75em;
+  margin: auto;
+  margin-bottom: 6em;
+}
+
+.bodyLink {
+  text-decoration: none;
+  color: black;
+}
+
+.bodyLink:hover {
+  color: black;
+}
+
+#indexWriteUp {
+  margin-top: 8em;
+  font-size: 1.5em;
+}
+
+#contactFormHeader {
+  font-size: 1.3em;
+}
+
+#contactFormBox {
+  margin-top: 3em;
+  font-size: 1em;
+}
+
+#navBarZ {
+  border-top: 1px solid black;
+}
+
+form {
+  width: 80%;
+  margin: auto;
+}
+
+#emailSubmitButton {
+  color: black;
+  float: right;
+}
+
+#portfolioBox {
+  margin-top: 3em;
+  text-align: center;
+}
+
+#aboutBox {
+  margin-top: 3em;
+}
+
+#aboutTitle {
+  padding: 0.25em;
+  border-bottom: 1px solid black;
+}
+
+#aboutBody {
+  font-size: 1.5em;
+  padding: 0.25em;
+}
+
+.btn {
+  border: 3px solid black;
+  margin: 1em;
+}
+
+#textblock {
+  text-align: center;
+  color: black;
+  box-sizing: border-box;
+  position: relative;
+  background-color: lightgrey;
+  width: 100%;
+  border: 3px solid black;
+}

@@ -4,6 +4,7 @@
 const express = require("express");
 const exphbs = require("express-handlebars");
 const bodyParser = require("body-parser");
+const path = require("path");
 
 // Create an instance of the express app.
 const app = express();
@@ -18,6 +19,9 @@ app.set("view engine", "handlebars");
 
 app.use(bodyParser.urlencoded({ extended: false }));
 app.use(bodyParser.json());
+
+// Static folder for assets
+app.use(express.static(path.join(__dirname, "public")));
 
 const routes = require("./routes/profileRoutes");
 
