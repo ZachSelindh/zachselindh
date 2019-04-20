@@ -1,0 +1,24 @@
+{
+  "name": "zachselindh",
+  "version": "1.0.0",
+  "description": "Developer Portfolio",
+  "main": "server.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "node server.js"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ZachSelindh/zachselindh.git"
+  },
+  "author": "zachSelindh",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/ZachSelindh/zachselindh/issues"
+  },
+  "homepage": "https://github.com/ZachSelindh/zachselindh#readme",
+  "dependencies": {
+    "express": "^4.16.4",
+    "express-handlebars": "^3.0.2"
+  }
+}
