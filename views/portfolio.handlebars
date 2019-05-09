@@ -1,39 +1,253 @@
 {{>header}}
 <div class="container">
     <div class="row">
-        <div class="col-sm-12 col-md-8 writeUpBox" id="portfolioBox">
-            <a href="https://zachselindh.github.io/Hangman-Game/" class="btn btn-default" id="hangmanGameLink">
-                <img class="img-responsive" src="./images/gallows6.jpg" width="250px" height="250px" />
-                <p id="textblock">Wild West Hangman</p>
-            </a>
-            <a href="https://zachselindh.github.io/Crystal-Witch-Game/" class="btn btn-default" id="crystalGameLink">
-                <img class="img-responsive" src="./images/blue-crystal.jpg" width="250px" height="250px" />
-                <p id="textblock">Crystal Witch Game</p>
-            </a>
-            <a href="https://zachselindh.github.io/Pop-Culture-Trivia/" class="btn btn-default" id="popCultureQuizLink">
-                <img class="img-responsive" src="./images/pop-culture.png" width="250px" height="250px" />
-                <p id="textblock">Pop Culture Trivia</p>
-            </a>
-            <a href="https://zachselindh.github.io/GIPHY-API-project/" class="btn btn-default" id="GIPHYAPILink">
-                <img class="img-responsive" src="./images/moviereel.png" width="250px" height="250px" />
-                <p id="textblock">GIPHY API Project</p>
-            </a>
-            <a href="https://zachselindh.github.io/Train-Scheduler/" class="btn btn-default" id="TrainLink">
-                <img class="img-responsive" src="./images/trainyard.jpg" width="250px" height="250px" />
-                <p id="textblock">Train Scheduler</p>
-            </a>
-            <a href="https://github.com/ZachSelindh/LIRI-Bot" class="btn btn-default" id="LIRILink">
-                <img class="img-responsive" src="./images/lirishot.PNG" width="250px" height="250px" />
-                <p id="textblock">LIRI Bot</p>
-            </a>
-            <a href="https://github.com/ZachSelindh/BAmazon" class="btn btn-default" id="BamazonLink">
-                <img class="img-responsive" src="./images/bamazon.PNG" width="250px" height="250px" />
-                <p id="textblock">Bamazon</p>
-            </a>
-            <a href="https://dungeons-and-dragons-and-dates.herokuapp.com/" class="btn btn-default" id="DDDLink">
-                <img class="img-responsive" src="./images/dnddates.PNG" width="250px" height="250px" />
-                <p id="textblock">D & D & Dates</p>
-            </a>
+        <div class="col-12 writeUpBox" id="portfolioBox">
+            {{!-- WoofShare --}}
+            <div class="row portfolio-item">
+                <div class="col-sm-12 col-md-5">
+                    <a href="https://woofshare.herokuapp.com/">
+                        <img class="img-responsive portfolio-button" src="./images/woofshare.gif" width="350px"
+                            height="250px" />
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-7">
+                    <h1 class="portfolio-title">WoofShare</h1>
+                    <p class="portfolio-body">
+                        One of the major projects created with a small team
+                        for my WebDev Bootcamp at UT. WoofShare
+                        is a full-stack web app designed around one idea:
+                        What if you could rent a dog?
+                        This app utilizes Google Accounts for user validation. Users can view a library of available
+                        dogs,
+                        add them to a locally stored favorites list, reserve them, and leave reviews for other users.
+                        <br><br>
+                        Hilarious concept aside, I'm very proud of this app!
+
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-6 tech-row">
+                    <span class="tech-title"> Technologies: </span>
+                    <img class="tech-icon" title="Bootstrap" src="./images/bootstrap-icon.png">
+                    <img class="tech-icon" title="Node.js" src="./images/nodejs-logo.png">
+                    <img class="tech-icon" title="Sequelize" src="./images/sequelize.svg">
+                    <img class="tech-icon" title="Heroku" src="./images/heroku.png">
+                    <img class="tech-icon" title="Handlebars" src="./images/handlebars.png">
+                    <img class="tech-icon" title="Sass" src="./images/sass.png">
+                    <img class="tech-icon" title="APIs" src="./images/api-logo.jpg">
+                </div>
+                <div class="col-sm-12 col-md-6 link-row">
+                    <span class="tech-title"> Links: </span>
+                    <a href="https://github.com/ZachSelindh/woofShare" title="GitHub Repo" target="_blank">
+                        <img class="tech-icon tech-link" src="./images/github-logo.svg">
+                    </a>
+                    <a href="https://woofshare.herokuapp.com/" title="Deployed App" target="_blank">
+                        <img class="tech-icon tech-link" src="./images/web-icon.png">
+                    </a>
+                </div>
+            </div {{!-- End --}}>
+
+            {{!-- On This Day --}}
+            <div class="row portfolio-item">
+                <div class="col-sm-12 col-md-7">
+                    <h1 class="portfolio-title">On This Day</h1>
+                    <p class="portfolio-body">
+                        One of my team-built projects for UT's WebDev Bootcamp.
+                        This application uses a datepicker to call various APIs
+                        and intergrate the response data into a format userful to the user.
+                        <br><br>
+                        The background image uses NASA's API to find a picture
+                        of our solar system taken by satellites or
+                        telescopes at some point through the years on the current date.
+                        <br><br>
+                        After the user picks a date, the app calls the Wikipedia and Youtube APIs
+                        to find relevant data to that date. For example, the Wikipeda AJAX call uses
+                        a scraper to find significant events that occured throughout history on that date.
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-5">
+                    <a href="https://zachselindh.github.io/On-This-Day-Project/">
+                        <img class="img-responsive portfolio-button" src="./images/on-this-day.gif" width="350px"
+                            height="250px" />
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-6 link-row">
+                    <span class="tech-title"> Links: </span>
+                    <a href="https://github.com/ZachSelindh/On-This-Day-Project" title="GitHub Repo" target="_blank">
+                        <img class="tech-icon tech-link" src="./images/github-logo.svg">
+                    </a>
+                    <a href="https://zachselindh.github.io/On-This-Day-Project/" title="Deployed App" target="_blank">
+                        <img class="tech-icon tech-link" src="./images/web-icon.png">
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-6 tech-row">
+                    <span class="tech-title"> Technologies: </span>
+                    <img class="tech-icon" title="HTML" src="./images/html-icon.png">
+                    <img class="tech-icon" title="CSS" src="./images/css-icon.png">
+                    <img class="tech-icon" title="Javascript" src="./images/javascript-icon.jpg">
+                    <img class="tech-icon" title="Bootstrap" src="./images/bootstrap-icon.png">
+                    <img class="tech-icon" title="JQuery" src="./images/jquery-logo.jpg">
+                    <img class="tech-icon" title="APIs" src="./images/api-logo.jpg">
+                </div>
+            </div {{!-- End --}}>
+
+            {{!-- Avengers Clicky Game --}}
+            <div class="row portfolio-item">
+                <div class="col-sm-12 col-md-6">
+                    <a href="https://avengers-clicky-app.herokuapp.com/">
+                        <img class="img-responsive portfolio-button" src="./images/avengers-clicky.gif" width="450px"
+                            height="250px" />
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-6">
+                    <h1 class="portfolio-title">Avengers React Clicky Game</h1>
+                    <p class="portfolio-body">
+                        My first React.js application! This app uses React to render a web page with
+                        cards featuring the visages of famous superheroes. Every time the user clicks an
+                        Avenger, the cards are shuffled. The user must continue clicking until they either
+                        click them all in sequence without repeats, or lose the game by clicking a card
+                        twice.
+                        <br><br>
+                        If you click twice, then remember: "You should have gone for the head."
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-6 tech-row">
+                    <span class="tech-title"> Technologies: </span>
+                    <img class="tech-icon" title="Bootstrap" src="./images/bootstrap-icon.png">
+                    <img class="tech-icon" title="JQuery" src="./images/jquery-logo.jpg">
+                    <img class="tech-icon" title="Node.js" src="./images/nodejs-logo.png">
+                    <img class="tech-icon" title="Heroku" src="./images/heroku.png">
+                    <img class="tech-icon" title="React.js" src="./images/react-logo.png">
+                </div>
+                <div class="col-sm-12 col-md-6 link-row">
+                    <span class="tech-title"> Links: </span>
+                    <a href="https://github.com/ZachSelindh/Clicky-React-Game" title="GitHub Repo" target="_blank">
+                        <img class="tech-icon tech-link" src="./images/github-logo.svg">
+                    </a>
+                    <a href="https://avengers-clicky-app.herokuapp.com/" title="Deployed App" target="_blank">
+                        <img class="tech-icon tech-link" src="./images/web-icon.png">
+                    </a>
+                </div>
+            </div {{!-- End --}}>
+
+            {{!-- News Scraper --}}
+            <div class="row portfolio-item">
+                <div class="col-sm-12 col-md-5">
+                    <a href="https://news-scraperer.herokuapp.com/">
+                        <img class="img-responsive portfolio-button" src="./images/news-scraper.gif" width="350px"
+                            height="250px" />
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-7">
+                    <h1 class="portfolio-title">News Scraper</h1>
+                    <p class="portfolio-body">
+                        This web app uses the Cheerio web scraper to make calls to various news websites
+                        and returns data this styled and rendered in a format that allows users to view
+                        the article headline, the subtext, and view links to the original articles.
+                        <br><br>
+                        The article information is stored using Mongoose and rendered using the Express-Handlebars
+                        templating engine.
+                        <br><br>
+                        The app also uses local storage to create a favorites list that is unique to each user.
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-6 tech-row">
+                    <span class="tech-title"> Technologies: </span>
+                    <img class="tech-icon" title="Heroku" src="./images/heroku.png">
+                    <img class="tech-icon" title="Handlebars" src="./images/handlebars.png">
+                    <img class="tech-icon" title="Node.js" src="./images/nodejs-logo.png">
+                    <img class="tech-icon" title="Bootstrap" src="./images/bootstrap-icon.png">
+                    <img class="tech-icon" title="JQuery" src="./images/jquery-logo.jpg">
+                    <img class="tech-icon" title="MongoDB" src="./images/mongodb-logo.png">
+                </div>
+                <div class="col-sm-12 col-md-6 link-row">
+                    <span class="tech-title"> Links: </span>
+                    <a href="https://github.com/ZachSelindh/News-Scraper" title="GitHub Repo" target="_blank">
+                        <img class="tech-icon tech-link" src="./images/github-logo.svg">
+                    </a>
+                    <a href="https://news-scraperer.herokuapp.com/" title="Deployed App" target="_blank">
+                        <img class="tech-icon tech-link" src="./images/web-icon.png">
+                    </a>
+                </div>
+            </div {{!-- End --}}>
+
+            {{!-- Crystal Witch Game --}}
+            <div class="row portfolio-item">
+                <div class="col-sm-12 col-md-4">
+                    <a href="https://zachselindh.github.io/Crystal-Witch-Game/">
+                        <img class="img-responsive portfolio-button" src="./images/blue-crystal.jpg" width="250px"
+                            height="250px" />
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-8">
+                    <h1 class="portfolio-title">Crystal Witch Game</h1>
+                    <p class="portfolio-body">
+                        One of my early apps. This game uses Jquery and timers to create a guessing/memory game
+                        in which the player must correctly learn the values of the displayed crystals and use
+                        on-the-fly arithmetic to get to the randomly generated target number.
+                        <br>
+                        <br>
+
+                        My app has a twist: In "Hardcore Mode," a ten-second timer is constantly counting down.
+                        When it reaches zero, the values of the crystals reset, but the current score and target stay
+                        the same!
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-6 tech-row">
+                    <span class="tech-title"> Technologies: </span>
+                    <img class="tech-icon" title="HTML" src="./images/html-icon.png">
+                    <img class="tech-icon" title="CSS" src="./images/css-icon.png">
+                    <img class="tech-icon" title="Javascript" src="./images/javascript-icon.jpg">
+                    <img class="tech-icon" title="Bootstrap" src="./images/bootstrap-icon.png">
+                    <img class="tech-icon" title="JQuery" src="./images/jquery-logo.jpg">
+                </div>
+                <div class="col-sm-12 col-md-6 link-row">
+                    <span class="tech-title"> Links: </span>
+                    <a href="https://github.com/ZachSelindh/Crystal-Witch-Game" title="GitHub Repo" target="_blank">
+                        <img class="tech-icon tech-link" src="./images/github-logo.svg">
+                    </a>
+                    <a href="https://zachselindh.github.io/Crystal-Witch-Game/" title="Deployed App" target="_blank">
+                        <img class="tech-icon tech-link" src="./images/web-icon.png">
+                    </a>
+                </div>
+            </div {{!-- End --}}>
+
+            {{!-- Wild West Game --}}
+            <div class="row portfolio-item">
+                <div class="col-sm-12 col-md-4">
+                    <a href="https://zachselindh.github.io/Hangman-Game/">
+                        <img class="img-responsive portfolio-button" src="./images/gallows6.jpg" width="250px"
+                            height="250px" />
+                    </a>
+                </div>
+                <div class="col-sm-12 col-md-8">
+                    <h1 class="portfolio-title">Wild West Hangman</h1>
+                    <p class="portfolio-body">
+                        My first function web application! This app uses vanilla Javascript and
+                        the Bootstrap HTML/CSS library for styling, albeit at the level of a true beginner!
+                        A basic hangman game, Wild West Hangman uses a native array of possible words to populate
+                        the scoreboard. Once a word is chosen, it is kicked out of the array, so it is possible to win
+                        the game is you successfully guess all the words! Extra credit if you don't use the
+                        console/developer tools to see the words!
+                    </p>
+                </div>
+                <div class="col-sm-12 col-md-6 tech-row">
+                    <span class="tech-title"> Technologies: </span>
+                    <img class="tech-icon" title="HTML" src="./images/html-icon.png">
+                    <img class="tech-icon" title="CSS" src="./images/css-icon.png">
+                    <img class="tech-icon" title="Javascript" src="./images/javascript-icon.jpg">
+                    <img class="tech-icon" title="Bootstrap" src="./images/bootstrap-icon.png">
+                </div>
+                <div class="col-sm-12 col-md-6 link-row">
+                    <span class="tech-title"> Links: </span>
+                    <a href="https://github.com/ZachSelindh/Hangman-Game" title="GitHub Repo" target="_blank">
+                        <img class="tech-icon tech-link" src="./images/github-logo.svg">
+                    </a>
+                    <a href="https://zachselindh.github.io/Hangman-Game/" title="Deployed App" target="_blank">
+                        <img class="tech-icon tech-link" src="./images/web-icon.png">
+                    </a>
+                </div>
+            </div {{!-- End --}}>
+
         </div>
     </div>
 </div>

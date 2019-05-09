@@ -31,6 +31,10 @@ nav {
   margin-right: 1.75em;
 }
 
+.nav-icon-z {
+  font-size: 20em;
+}
+
 .writeUpBox {
   background-color: rgba(255, 255, 255, 0.8);
   border: 1px solid black;
@@ -75,6 +79,13 @@ form {
 #emailSubmitButton {
   color: black;
   float: right;
+}
+
+#emailSubmitButton:hover {
+  cursor: pointer;
+  box-shadow: 10px 10px 10px grey;
+  transform: scale(1.05);
+  transition-duration: 0.5s;
 }
 
 #portfolioBox {
